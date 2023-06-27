@@ -6,7 +6,7 @@ public class LengthOfLastWord {
         for (int i = s.length(); i != 0; i--){
             if (s.charAt(i-1) != ' '){
                 counter += 1;
-            } else if (counter >= 1){
+            } else if (s.charAt(i-1) == ' ' && counter >= 1){
                 break;
             }
         }
