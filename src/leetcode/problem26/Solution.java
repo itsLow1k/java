@@ -10,10 +10,12 @@ class Solution {
         }
         for (int i = 1; i < list.size(); i++) {
             if (list.get(i).equals(list.get(i - 1))) {
-                nums[i] = list.get(i);
+                list.remove(i);
                 i--;
             }
+            nums[i] = list.get(i);
         }
+        System.out.println(list);
         return list.size();
     }
 
