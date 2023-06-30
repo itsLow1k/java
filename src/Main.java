@@ -1,17 +1,22 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
-    public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    int min = 5;
+    int max = 0;
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+    void minMax(int[] a) {
+        for (int j : a) {
+            if (j < min) {
+                min = j;
+            }
+            if (j > max) {
+                max = j;
+            }
         }
+        System.out.println(min + " and " + max);
+    }
+
+    public static void main(String[] args) {
+        Main m1 = new Main();
+        m1.minMax(new int[]{4, 2, 0, 7, -3, -6, 9, 12, 5});
     }
 }
