@@ -12,11 +12,11 @@ public class SearchInsert {
                 }
             }
         }
+        System.out.println(result);
         return result;
     }
 
     public static void main(String[] args) {
-        SearchInsert s1 = new SearchInsert();
-        s1.searchInsert(new int[] {1,3,5,6}, 7);
+        new SearchInsert().searchInsert(new int[] {1,3,5,6}, 7);
     }
 }
