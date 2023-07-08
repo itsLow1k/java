@@ -1,14 +1,12 @@
-package leetcode.problem28_notsolved;
+package leetcode.problem28;
 
 public class Solution {
     public int strStr(String haystack, String needle) {
-        int index = 0;
-
-        return index;
+        return haystack.indexOf(needle);
     }
 
     public static void main(String[] args) {
         Solution s1 = new Solution();
-        s1.strStr("bsadb", "sad");
+        s1.strStr("leetcode", "leeto");
     }
 }
