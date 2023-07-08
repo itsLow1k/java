@@ -1,4 +1,4 @@
-package leetcode.problem125_forcheck;
+package leetcode.problem125;
 
 class Solution {
     public boolean isPalindrome(String s) {
@@ -18,6 +18,6 @@ class Solution {
 
     public static void main(String[] args) {
         Solution s = new Solution();
-        s.isPalindrome("Aman");
+        s.isPalindrome("A man, a plan, a canal: Panama");
     }
 }
