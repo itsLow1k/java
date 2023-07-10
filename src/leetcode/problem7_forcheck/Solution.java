@@ -1,4 +1,4 @@
-package leetcode.problem7;
+package leetcode.problem7_forcheck;
 
 public class Solution {
     public int reverse(int x) {
@@ -7,14 +7,14 @@ public class Solution {
             numFromIntVar.deleteCharAt(0);
         }
         numFromIntVar.reverse();
-        long lll = Long.parseLong(String.valueOf(numFromIntVar));
-        if (lll >= 2147483647 || lll <= -2147483648) {
+        long reversedNum = Long.parseLong(String.valueOf(numFromIntVar));
+        if (reversedNum >= 2147483647 || reversedNum <= -2147483648) {
             return 0;
         } else {
             if (x < 0) {
-                lll *= -1;
+                reversedNum *= -1;
             }
-            return (int) lll;
+            return (int) reversedNum;
         }
     }
 
