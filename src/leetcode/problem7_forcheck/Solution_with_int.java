@@ -1,6 +1,6 @@
 package leetcode.problem7_forcheck;
 
-public class Solution2 {
+public class Solution_with_int {
     public int reverse(int x) {
         int reversedNum;
         StringBuilder numFromIntVar = new StringBuilder(String.valueOf(x));
@@ -20,7 +20,7 @@ public class Solution2 {
     }
 
     public static void main(String[] args) {
-        Solution2 s = new Solution2();
+        Solution_with_int s = new Solution_with_int();
         s.reverse(-20);
     }
 }
