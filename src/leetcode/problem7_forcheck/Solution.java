@@ -8,7 +8,7 @@ public class Solution {
         }
         numFromIntVar.reverse();
         long reversedNum = Long.parseLong(String.valueOf(numFromIntVar));
-        if (reversedNum >= 2147483647 || reversedNum <= -2147483648) {
+        if (reversedNum >= Integer.MAX_VALUE || reversedNum <= Integer.MIN_VALUE) {
             return 0;
         } else {
             if (x < 0) {
