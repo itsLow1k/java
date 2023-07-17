@@ -1,22 +1,22 @@
 package leetcode.problem7_forcheck;
 
 public class SolutionWithInt {
-    public int reverse(int x) {
-        int reversedNum;
-        StringBuilder numFromIntVar = new StringBuilder(String.valueOf(x));
-        if (numFromIntVar.charAt(0) == '-') {
-            numFromIntVar.deleteCharAt(0);
+    public int reverse(int inputNum) {
+        int reversedInputNum;
+        StringBuilder sbInputNum = new StringBuilder(String.valueOf(inputNum));
+        if (sbInputNum.charAt(0) == '-') {
+            sbInputNum.deleteCharAt(0);
         }
-        numFromIntVar.reverse();
+        sbInputNum.reverse();
         try {
-            reversedNum = Integer.parseInt(String.valueOf(numFromIntVar));
+            reversedInputNum = Integer.parseInt(String.valueOf(sbInputNum));
         } catch (NumberFormatException exception){
             return 0;
         }
-        if (x < 0) {
-            reversedNum *= -1;
+        if (inputNum < 0) {
+            reversedInputNum *= -1;
         }
-        return reversedNum;
+        return reversedInputNum;
     }
 
     public static void main(String[] args) {
