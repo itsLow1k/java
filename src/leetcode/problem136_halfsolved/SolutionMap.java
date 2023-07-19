@@ -6,17 +6,17 @@ import java.util.Map;
 public class SolutionMap {
 
     public int singleNumber(int[] nums) {
-        Map<Integer, Integer> inputNums = new HashMap<>();
+        Map<Integer, Integer> mapOfInputNums = new HashMap<>();
         for (int a : nums) {
-            if (inputNums.containsKey(a)) {
-                inputNums.remove(a, a);        // Решение удовлетворяет условию, что каждый элемент, кроме одного, существует в 2 экземплярах.
+            if (mapOfInputNums.containsKey(a)) {
+                mapOfInputNums.remove(a, a);        // Решение удовлетворяет условию, что каждый элемент, кроме одного, существует в 2 экземплярах.
             } else {                           // Каждый элемент будет добавлен и удален, если существует в 2ух экземплярах.
-                inputNums.put(a, a);
+                mapOfInputNums.put(a, a);
             }
         }
-        for (int a : inputNums.keySet()) {
-            System.out.println(inputNums.get(a));
-            return inputNums.get(a);          // Решение будет некорректным, если по условию, одинаковых элементов может быть больше 2ух.
+        for (int a : mapOfInputNums.keySet()) {
+            System.out.println(mapOfInputNums.get(a));
+            return mapOfInputNums.get(a);          // Решение будет некорректным, если по условию, одинаковых элементов может быть больше 2ух.
         }
         return 0;
     }

@@ -1,21 +1,19 @@
 package leetcode.problem136_halfsolved;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Solution {
 
     public int singleNumber(int[] nums) {
         ArrayList<Integer> aL = new ArrayList<>();
 
-        for (int a : nums){
-            if (aL.contains(a)){
-                aL.removeAll(Collections.singletonList(a)); // Метод singletonList подсмотрен
-            } else{
+        for (int a : nums) {
+            if (aL.contains(a)) {
+                aL.remove(Integer.valueOf(a));
+            } else {
                 aL.add(a);
             }
         }
-        System.out.println(aL.get(0));
         return aL.get(0);
     }
 
