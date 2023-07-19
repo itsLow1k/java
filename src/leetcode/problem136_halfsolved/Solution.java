@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Solution {
+
     public int singleNumber(int[] nums) {
         ArrayList<Integer> aL = new ArrayList<>();
 

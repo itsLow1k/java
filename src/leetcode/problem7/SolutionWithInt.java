@@ -1,4 +1,4 @@
-package leetcode.problem7_forcheck;
+package leetcode.problem7;
 
 public class SolutionWithInt {
     public int reverse(int inputNum) {
