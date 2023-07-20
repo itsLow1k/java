@@ -3,7 +3,7 @@ package leetcode.problem136_halfsolved;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SolutionMap {
+public class SolutionMapKeySet {
 
     public int singleNumber(int[] nums) {
         Map<Integer, Integer> mapOfInputNums = new HashMap<>();
@@ -22,7 +22,7 @@ public class SolutionMap {
     }
 
     public static void main(String[] args) {
-        SolutionMap s = new SolutionMap();
+        SolutionMapKeySet s = new SolutionMapKeySet();
         s.singleNumber(new int[]{4, 1, 2, 1, 2});
     }
 }

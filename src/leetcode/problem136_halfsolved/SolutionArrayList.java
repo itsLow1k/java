@@ -2,7 +2,7 @@ package leetcode.problem136_halfsolved;
 
 import java.util.ArrayList;
 
-public class Solution {
+public class SolutionArrayList {
 
     public int singleNumber(int[] nums) {
         ArrayList<Integer> aL = new ArrayList<>();
@@ -18,7 +18,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution s = new Solution();
+        SolutionArrayList s = new SolutionArrayList();
         s.singleNumber(new int[]{2, 2, 1});
     }
 }
