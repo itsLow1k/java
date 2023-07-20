@@ -1,6 +1,6 @@
 package leetcode.problem121;
 
-public class BuyAndSell {
+public class Solution {
     public static int maxProfit (int[] prices){
         int minPrice = prices[0];
         int profit = 0;

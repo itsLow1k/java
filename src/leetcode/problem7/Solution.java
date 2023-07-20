@@ -1,25 +1,26 @@
 package leetcode.problem7;
 
 public class Solution {
-    public int reverse(int x) {
-        StringBuilder numFromIntVar = new StringBuilder(String.valueOf(x));
-        if (numFromIntVar.charAt(0) == '-'){
-            numFromIntVar.deleteCharAt(0);
+    public int reverse(int inputNum) {
+        int reversedInputNum;
+        StringBuilder sbInputNum = new StringBuilder(String.valueOf(inputNum));
+        if (sbInputNum.charAt(0) == '-') {
+            sbInputNum.deleteCharAt(0);
         }
-        numFromIntVar.reverse();
-        long reversedNum = Long.parseLong(String.valueOf(numFromIntVar));
-        if (reversedNum >= Integer.MAX_VALUE || reversedNum <= Integer.MIN_VALUE) {
+        sbInputNum.reverse();
+        try {
+            reversedInputNum = Integer.parseInt(String.valueOf(sbInputNum));
+        } catch (NumberFormatException exception){
             return 0;
-        } else {
-            if (x < 0) {
-                reversedNum *= -1;
-            }
-            return (int) reversedNum;
         }
+        if (inputNum < 0) {
+            reversedInputNum *= -1;
+        }
+        return reversedInputNum;
     }
 
     public static void main(String[] args) {
         Solution s = new Solution();
-        s.reverse(-2147483648);
+        s.reverse(-20);
     }
 }

@@ -1,6 +1,6 @@
 package leetcode.problem125;
 
-class Solution2 {
+class SolutionOOP {
 
     public boolean isPalindrome(String s) {
         s = s.toLowerCase();
@@ -18,7 +18,7 @@ class Solution2 {
         return String.valueOf(sb1).equals(String.valueOf(sb1.reverse()));
     }
     public static void main(String[] args) {
-        Solution2 s = new Solution2();
+        SolutionOOP s = new SolutionOOP();
         s.isPalindrome("A man, a plan, a canal: Panama");
     }
 }

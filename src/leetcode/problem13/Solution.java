@@ -8,7 +8,7 @@ package leetcode.problem13;
 //        D             500
 //        M             1000
 
-public class RomanToInteger {
+public class Solution {
     static int trans(String  s){
         int result = 0;
         int num = 0;

@@ -1,7 +1,7 @@
 package leetcode.problem242;
 
 import java.util.Arrays;
-public class IsAnagram {
+public class Solution {
     public boolean isAnagram(String s, String t) {
         boolean result = false;
         if (s.length() == t.length()){
@@ -21,7 +21,7 @@ public class IsAnagram {
     }
 
     public static void main(String[] args) {
-        IsAnagram t = new IsAnagram();
+        Solution t = new Solution();
         t.isAnagram("st", "st");
     }
 }

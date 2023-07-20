@@ -1,6 +1,6 @@
 package leetcode.problem58;
 
-public class LengthOfLastWord {
+public class Solution {
     public static int lengthOfLastWord(String s) {
         int counter = 0;
         for (int i = s.length(); i != 0; i--) {

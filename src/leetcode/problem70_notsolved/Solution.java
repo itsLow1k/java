@@ -1,6 +1,6 @@
 package leetcode.problem70_notsolved;
 
-public class ClimbStairs {
+public class Solution {
     public int climbStairs(int a){
         int oneStep = 1;
         int twoStep = 2;
@@ -10,7 +10,7 @@ public class ClimbStairs {
     }
 
     public static void main(String[] args) {
-        ClimbStairs c1 = new ClimbStairs();
+        Solution c1 = new Solution();
         c1.climbStairs(3);
     }
 }

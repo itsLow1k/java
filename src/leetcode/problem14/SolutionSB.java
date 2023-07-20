@@ -1,12 +1,12 @@
 package leetcode.problem14;
-public class LongestCommonPrefix {
+public class SolutionSB {
     static String prefix (String[] s){
-        String result = "";
-        String minLength = s[0];
+        StringBuilder result = new StringBuilder();
+        StringBuilder minLength = new StringBuilder(s[0]);
         if (s.length != 1) {
             for (int i = 1; i < s.length; i++) {
                 if (s[i].length() < minLength.length()) {
-                    minLength = s[i];
+                    minLength = new StringBuilder(s[i]);
                 }
             }
             OUTER:
@@ -16,12 +16,13 @@ public class LongestCommonPrefix {
                         break OUTER;
                     }
                 }
-                result += s[0].charAt(j);
+                result.append(s[0].charAt(j));
             }
         } else {
-            result += s[0];
+            result.append(s[0]);
         }
-        return result;
+        String finalPrefix = result.toString();
+        return finalPrefix;
     }
     public static void main(String[] args) {
         prefix(new String[] {"acb","acs","acb"});

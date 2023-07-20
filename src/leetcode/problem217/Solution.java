@@ -2,7 +2,7 @@ package leetcode.problem217;
 
 import java.util.Arrays;
 
-public class IsDuplicate {
+public class Solution {
     static boolean containsDuplicate(int[] a) {
         boolean result = false;
         Arrays.sort(a);

@@ -1,6 +1,6 @@
 package leetcode.problem35;
 
-public class SearchInsert {
+public class Solution {
     public int searchInsert(int[] nums, int target) {
         int result = 0;
          for (int i = 0; i < nums.length; i++){
@@ -17,6 +17,6 @@ public class SearchInsert {
     }
 
     public static void main(String[] args) {
-        new SearchInsert().searchInsert(new int[] {1,3,5,6}, 7);
+        new Solution().searchInsert(new int[] {1,3,5,6}, 7);
     }
 }
