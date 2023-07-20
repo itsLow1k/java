@@ -1,4 +1,4 @@
-package leetcode.problem136_halfsolved;
+package leetcode.problem136;
 
 import java.util.HashMap;
 import java.util.Map;
