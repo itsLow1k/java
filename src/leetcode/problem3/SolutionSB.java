@@ -9,10 +9,11 @@ public class SolutionSB {
             if (!substringWithoutRepeating.toString().contains(String.valueOf(startString.charAt(i)))) {
                 substringWithoutRepeating.append(startString.charAt(i));
             } else {
-                startString.delete(0, startString.indexOf(String.valueOf(startString.charAt(i)))+1);
+                startString.deleteCharAt(0);
                 substringWithoutRepeating.setLength(0);
                 i=0;
                 substringWithoutRepeating.append(startString.charAt(i));
+                continue;
             }
             if (maxLength < substringWithoutRepeating.length()){
                 maxLength = substringWithoutRepeating.length();
