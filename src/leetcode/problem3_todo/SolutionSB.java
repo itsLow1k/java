@@ -1,4 +1,4 @@
-package leetcode.problem3;
+package leetcode.problem3_todo;
 
 
 public class SolutionSB {
