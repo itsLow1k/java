@@ -1,5 +1,6 @@
 package leetcode.problem3;
 
+
 public class SolutionSB {
     public int lengthOfLongestSubstring(String string) {
         int maxLength = 0;
@@ -9,17 +10,17 @@ public class SolutionSB {
             if (!substringWithoutRepeating.toString().contains(String.valueOf(startString.charAt(i)))) {
                 substringWithoutRepeating.append(startString.charAt(i));
             } else {
-                startString.deleteCharAt(0);
+                startString.delete(0, startString.indexOf(String.valueOf(startString.charAt(i))) + 1);
                 substringWithoutRepeating.setLength(0);
-                i=0;
+                i = 0;
                 substringWithoutRepeating.append(startString.charAt(i));
                 continue;
             }
-            if (maxLength < substringWithoutRepeating.length()){
+            if (maxLength < substringWithoutRepeating.length()) {
                 maxLength = substringWithoutRepeating.length();
             }
-            System.out.println(maxLength);
-            System.out.println(substringWithoutRepeating);
+//            System.out.println(maxLength);
+//            System.out.println(substringWithoutRepeating);
         }
         return maxLength;
     }
