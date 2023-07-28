@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class SolutionHashSet {
     public int lengthOfLongestSubstring(String string) {
-        int startPoint = 0;
+        int startPoint = 1;
         int counter = 0;
         Set<Character> set = new HashSet<>();
         for (int i = 0; i < string.length(); i++) {
@@ -14,8 +14,7 @@ public class SolutionHashSet {
                 counter = Math.max(counter, set.size());
             } else {
                 set.clear();
-                i = startPoint++;
-                set.add(string.charAt(i));
+                i = startPoint++ - 1;
             }
 //            System.out.println(counter);
 //            System.out.println(set);
