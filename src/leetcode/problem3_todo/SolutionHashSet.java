@@ -11,13 +11,12 @@ public class SolutionHashSet {
         for (int i = 0; i < string.length(); i++) {
             if (!set.contains(string.charAt(i))) {
                 set.add(string.charAt(i));
+                counter = Math.max(counter, set.size());
             } else {
                 set.clear();
                 i = startPoint++;
                 set.add(string.charAt(i));
-                continue;
             }
-            counter = Math.max(counter, set.size());
 //            System.out.println(counter);
 //            System.out.println(set);
         }
