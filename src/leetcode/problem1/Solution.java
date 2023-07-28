@@ -8,11 +8,10 @@ public class Solution {
         for (i = 0; i < nums.length; i++) {
             for (c = 1; c < nums.length; c++) {
                 if (i == c){
-                    break;
+                    continue;
                 }
                 if ((nums[i] + nums[c]) == target) {
-                    result[0] = i;
-                    result[1] = c;
+                    return new int[]{i, c};
                 }
             }
         }
