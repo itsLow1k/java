@@ -1,9 +1,8 @@
-package udemy.part2.stream;
+package udemy.lessons2.stream;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class StreamMethodMap {
     public static void main(String[] args) {
@@ -23,6 +22,23 @@ public class StreamMethodMap {
             }
             return element;
         }).toArray();
-        System.out.println(Arrays.toString(array));
+        int forForEach = 5;
+//        System.out.println(Arrays.toString(array));
+//        Arrays.stream(array).forEach(el -> {
+//            el += forForEach;
+//            System.out.println(el);
+//        });
+        Arrays.stream(array).forEach(StreamMethodMap::innerMethod);
+    }
+    static void innerMethod(int a){
+        a += 5;
+        System.out.println("Element after sum = " + a);
+    }
+}
+
+class Test{
+    static void myMethod(int a){
+        a += 5;
+        System.out.println("Element after sum = " + a);
     }
 }
