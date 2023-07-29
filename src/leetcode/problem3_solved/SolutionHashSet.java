@@ -1,4 +1,4 @@
-package leetcode.problem3_last;
+package leetcode.problem3_solved;
 
 import java.util.HashSet;
 import java.util.Set;

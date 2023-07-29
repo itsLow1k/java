@@ -1,4 +1,4 @@
-package leetcode.problem3_last;
+package leetcode.problem3_solved;
 
 
 public class SolutionSB {
