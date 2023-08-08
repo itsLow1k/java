@@ -6,10 +6,8 @@ public class SolutionStream {
     public static int removeDuplicates(int[] nums) {
         int[] tempNums;
         tempNums = Arrays.stream(nums).distinct().toArray();
-        for (int i = 0; i < tempNums.length; i++){
-            nums[i] = tempNums[i];
-        }
-        return tempNums.length;
+        System.arraycopy(tempNums, 0, nums, 0, tempNums.length);
+        return (int) Arrays.stream(nums).distinct().count();
     }
 
     public static void main(String[] args) {

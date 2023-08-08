@@ -22,7 +22,7 @@ public class StreamMethodMap {
             }
             return element;
         }).toArray();
-        int forForEach = 5;
+//        int forForEach = 5;
 //        System.out.println(Arrays.toString(array));
 //        Arrays.stream(array).forEach(el -> {
 //            el += forForEach;
